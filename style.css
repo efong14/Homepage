@@ -1,0 +1,22 @@
+section,
+.aboutContainer,
+.projectContainer,
+.contactContainer {
+  border: 1px solid black;
+}
+
+.aboutPic {
+  max-width: 200px;
+}
+
+.contactPic {
+  max-width: 500px;
+}
+
+.aboutIcons {
+  width: 20px;
+}
+
+.contactIcons {
+  width: 30px;
+}
