@@ -1,22 +1,142 @@
-section,
-.aboutContainer,
-.projectContainer,
-.contactContainer {
+@font-face {
+  font-family: Roboto;
+  src: url(./Font/Roboto-VariableFont_wdth\wght.ttf);
+}
+
+@font-face {
+  font-family: Playfair;
+  src: url(./Font/PlayfairDisplay-VariableFont_wght.ttf);
+}
+
+* {
+  color: #222831;
+}
+
+body {
+  margin: 0;
+}
+
+header,
+section {
   border: 1px solid black;
 }
 
+.contactContainer {
+  border: 1px blue solid;
+}
+
+img {
+  object-fit: contain;
+}
+
+h1,
+h2,
+.projectHeader {
+  font-family: Playfair;
+}
+
+.cardText,
+.projectContent,
+.contactText > div {
+  font-family: Roboto;
+}
+
+.aboutContainer {
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  background-color: #eb5a3c;
+}
+
+.cardContainer,
 .aboutPic {
-  max-width: 200px;
+  filter: drop-shadow(0 0 5px black);
+}
+
+.cardContainer {
+  position: relative;
+  min-height: 500px;
+  max-width: 800px;
+  background-color: white;
+}
+
+.aboutPic {
+  max-height: 80vh;
+}
+
+h1 {
+  font-size: 40px;
+  margin: 0px;
+}
+
+.cardText {
+  margin-top: 20px;
+  font-size: 30px;
+}
+
+.cardContainer > .iconContainer {
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  min-width: 150px;
+  bottom: 30px;
+  right: 30px;
+}
+
+.aboutIcons {
+  width: 35px;
+}
+
+section {
+  position: relative;
+  min-height: 90vh;
+  padding: 100px;
+}
+.custom-shape-divider-top-1738915510 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1738915510 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+}
+
+.custom-shape-divider-top-1738915510 .shape-fill {
+  fill: #eb5a3c;
+}
+
+section > h1 {
+  margin-top: 100px;
+}
+
+.projectContainer {
+  display: grid;
+  min-height: 140vh;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2em;
+}
+
+.projectCard {
+  border: solid green 1px;
 }
 
 .contactPic {
   max-width: 500px;
 }
 
-.aboutIcons {
-  width: 20px;
-}
-
 .contactIcons {
   width: 30px;
 }
+
+/* FIGURE OUT HOW TO MAKE ALL SECTIONS SAGAD, BY PADDING ON EACH PART?
+USE MEDIA QUERIES FOR THE GRID NLNG CAUSE YOU WANT IT TO STAY THE SAME SIZE
+JUST DIFF ROWS */
