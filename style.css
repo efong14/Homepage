@@ -9,6 +9,7 @@
 }
 
 * {
+  box-sizing: border-box;
   color: #222831;
 }
 
@@ -17,10 +18,14 @@ body {
 }
 
 header,
-section {
+section,
+footer {
   border: 1px solid black;
+  padding: 100px;
 }
 
+.projectContainer,
+.aboutContainer,
 .contactContainer {
   border: 1px blue solid;
 }
@@ -41,13 +46,15 @@ h2,
   font-family: Roboto;
 }
 
+header {
+  background-color: #eb5a3c;
+}
+
 .aboutContainer {
   margin: 0px;
   display: flex;
-  justify-content: center;
   align-items: center;
   min-height: 90vh;
-  background-color: #eb5a3c;
 }
 
 .cardContainer,
@@ -57,36 +64,36 @@ h2,
 
 .cardContainer {
   position: relative;
-  min-height: 500px;
-  max-width: 800px;
+  padding: 30px;
+  min-height: 700px;
   background-color: white;
 }
 
 .aboutPic {
-  max-height: 80vh;
+  max-height: 90vh;
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 80px;
   margin: 0px;
 }
 
 .cardText {
-  margin-top: 20px;
-  font-size: 30px;
+  margin-top: 50px;
+  font-size: 40px;
 }
 
 .cardContainer > .iconContainer {
   position: absolute;
   display: flex;
   justify-content: space-around;
-  min-width: 150px;
-  bottom: 30px;
+  min-width: 225px;
+  bottom: 60px;
   right: 30px;
 }
 
 .aboutIcons {
-  width: 35px;
+  width: 50px;
 }
 
 section {
@@ -126,7 +133,33 @@ section > h1 {
 }
 
 .projectCard {
-  border: solid green 1px;
+  /* border: solid green 1px; */
+  filter: drop-shadow(2px 2px 2px grey);
+  background-color: white;
+}
+
+.projectScreen {
+  object-fit: cover;
+  width: 100%;
+  height: 65%;
+}
+
+.projectText {
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 20px;
+}
+
+.projectHeader {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 30px;
+}
+
+.projectIcons {
+  width: 30px;
 }
 
 .contactPic {
@@ -136,7 +169,3 @@ section > h1 {
 .contactIcons {
   width: 30px;
 }
-
-/* FIGURE OUT HOW TO MAKE ALL SECTIONS SAGAD, BY PADDING ON EACH PART?
-USE MEDIA QUERIES FOR THE GRID NLNG CAUSE YOU WANT IT TO STAY THE SAME SIZE
-JUST DIFF ROWS */
