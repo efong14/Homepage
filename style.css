@@ -20,7 +20,8 @@ body {
 header,
 section,
 footer {
-  padding: 100px;
+  margin: 0px;
+  padding: 50px;
 }
 
 img {
@@ -58,7 +59,7 @@ header {
 .cardContainer {
   position: relative;
   padding: 30px;
-  min-height: 700px;
+  min-height: 600px;
   background-color: white;
 }
 
@@ -81,7 +82,7 @@ h1 {
   display: flex;
   justify-content: space-around;
   min-width: 225px;
-  bottom: 60px;
+  bottom: 30px;
   right: 30px;
 }
 
@@ -92,8 +93,8 @@ h1 {
 section {
   position: relative;
   min-height: 90vh;
-  padding: 100px;
 }
+
 .custom-shape-divider-top-1738915510 {
   position: absolute;
   top: 0;
@@ -116,19 +117,21 @@ section {
 
 section > h1 {
   margin-top: 100px;
+  margin-bottom: 10px;
 }
 
 .projectContainer {
   display: grid;
   min-height: 140vh;
+  width: 100%;
   grid-template-columns: repeat(3, 1fr);
   gap: 2em;
 }
 
 .projectCard {
-  /* border: solid green 1px; */
   filter: drop-shadow(2px 2px 2px grey);
   background-color: white;
+  min-height: 500px;
 }
 
 .projectScreen {
@@ -209,6 +212,10 @@ h2 {
   max-width: 60%;
 }
 
+.contactPic > img {
+  max-width: 100%;
+}
+
 @media (max-width: 1200px) {
   .aboutContainer {
     display: block;
@@ -218,15 +225,22 @@ h2 {
     max-height: 60vh;
     float: left;
     z-index: 1;
+    margin-right: 20px;
+  }
+  .cardContainer {
+    min-height: 800px;
   }
   .cardContainer > .iconContainer {
     display: none;
   }
+
+  .projectContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
+
 @media (max-width: 600px) {
   header {
     background-color: #222831;
   }
 }
-
-/* Why does image dissapear when floating. Sent to behind background-color. Needed to make it position relative and z index 1 to bring it forward. */

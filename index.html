@@ -9,7 +9,10 @@
   <body>
     <header>
       <div class="aboutContainer">
-        <img src="./images/portrait.jpg" alt="Stock head shot" class="aboutPic" />
+        <picture>
+          <source srcset="./images/portrait_small.jpg" media="(max-width: 600px)" />
+          <img src="./images/portrait.jpg" alt="Stock head shot" class="aboutPic" />
+        </picture>
         <div class="cardContainer">
           <h1>About me</h1>
           <div class="cardText">
@@ -70,8 +73,7 @@
               </div>
             </div>
             <div class="projectContent">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet justo
-              sodales, efficitur turpis sit amet, dignissim enim. Phasellus at dui purus.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </div>
           </div>
         </div>
@@ -90,8 +92,7 @@
               </div>
             </div>
             <div class="projectContent">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet justo
-              sodales, efficitur turpis sit amet, dignissim enim. Phasellus at dui purus.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </div>
           </div>
         </div>
@@ -110,8 +111,7 @@
               </div>
             </div>
             <div class="projectContent">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet justo
-              sodales, efficitur turpis sit amet, dignissim enim. Phasellus at dui purus.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </div>
           </div>
         </div>
@@ -129,10 +129,7 @@
                 <img src="./images/open-in-new.svg" alt="open-in-new" class="projectIcons" />
               </div>
             </div>
-            <div class="projectContent">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet justo
-              sodales, efficitur turpis sit amet, dignissim enim. Phasellus at dui purus.
-            </div>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </div>
         </div>
         <div class="projectCard">
@@ -150,8 +147,7 @@
               </div>
             </div>
             <div class="projectContent">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet justo
-              sodales, efficitur turpis sit amet, dignissim enim. Phasellus at dui purus.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </div>
           </div>
         </div>
@@ -170,8 +166,7 @@
               </div>
             </div>
             <div class="projectContent">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet justo
-              sodales, efficitur turpis sit amet, dignissim enim. Phasellus at dui purus.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </div>
           </div>
         </div>
@@ -216,7 +211,11 @@
             />
           </div>
         </div>
-        <img src="./images/landscape.jpg" alt="Stock wide shot" class="contactPic" />
+        <picture class="contactPic">
+          <source srcset="./images/landscape_small.jpg" media="(max-width: 600px)" />
+          <source srcset="./images/landscape_small.jpg" media="(max-width: 1200px)" />
+          <img src="./images/landscape.jpg" alt="Stock head shot" />
+        </picture>
       </div>
     </footer>
   </body>
