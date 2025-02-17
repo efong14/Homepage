@@ -163,9 +163,9 @@ footer {
 }
 
 .contactContainer {
-  position: relative;
   display: flex;
   min-height: 80vh;
+  justify-content: space-between;
   align-items: start;
 }
 
@@ -182,8 +182,9 @@ h2 {
 .contactContent,
 .contactAddress,
 .contactNumbers {
-  font-size: 30px;
+  font-size: 25px;
   margin-bottom: 50px;
+  margin-right: 20px;
 }
 
 .contactPhone,
@@ -198,10 +199,9 @@ h2 {
 }
 
 .contactText > .iconContainer {
-  position: absolute;
   display: flex;
   justify-content: space-between;
-  min-width: 180px;
+  max-width: 180px;
 }
 
 .contactIcons {
@@ -220,6 +220,7 @@ h2 {
   .aboutContainer {
     display: block;
   }
+
   .aboutPic {
     position: relative;
     max-height: 60vh;
@@ -227,9 +228,11 @@ h2 {
     z-index: 1;
     margin-right: 20px;
   }
+
   .cardContainer {
     min-height: 800px;
   }
+
   .cardContainer > .iconContainer {
     display: none;
   }
@@ -237,10 +240,74 @@ h2 {
   .projectContainer {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .contactContainer {
+    min-height: fit-content;
+  }
+
+  .contactText {
+    max-width: 60%;
+  }
+
+  .contactContent,
+  .contactAddress,
+  .contactNumbers {
+    margin-bottom: 25px;
+    margin-right: 20px;
+  }
+
+  .contactPic {
+    max-width: 40%;
+  }
 }
 
 @media (max-width: 600px) {
-  header {
-    background-color: #222831;
+  .aboutContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .aboutPic {
+    float: none;
+    max-height: 90vh;
+    max-width: 100%;
+  }
+  .cardContainer {
+    border: none;
+    filter: none;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    background-color: #eb5a3c;
+  }
+
+  .cardContainer > h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 65px;
+  }
+
+  .cardContainer > .iconContainer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    position: static;
+  }
+
+  .projectContainer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .contactContainer {
+    flex-direction: column;
+    justify-content: start;
+  }
+
+  .contactText {
+    min-width: 100%;
+  }
+
+  .contactPic {
+    margin-top: 50px;
+    min-width: 100%;
   }
 }
